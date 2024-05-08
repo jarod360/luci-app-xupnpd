@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI support for xupnpd
+LUCI_TITLE:=LuCI page for XUPNPD
 LUCI_DEPENDS:=+xupnpd
 LUCI_PKGARCH:=all
 PKG_VERSION:=1.8
