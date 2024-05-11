@@ -17,10 +17,7 @@ define Package/luci-app-xupnpd/install
     $(INSTALL_DIR) $(1)/etc/config
     $(INSTALL_CONF) ./files/etc/config/xupnpd $(1)/etc/config/xupnpd
     chmod 755 $(1)/etc/config/xupnpd
-    $(INSTALL_DIR) $(1)/etc/init.d
-    $(INSTALL_BIN) ./files/etc/init.d/xupnpd $(1)/etc/init.d/xupnpd
-    $(INSTALL_DIR) $(1)/etc/rc.d
-    $(LN) ../init.d/xupnpd $(1)/etc/rc.d/S50xupnpd
+    chmod 755 $(1)/etc/init.d/xupnpd
 endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
