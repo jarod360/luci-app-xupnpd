@@ -13,8 +13,6 @@ PKG_NAME:=luci-app-xupnpd
 PKG_VERSION:=1.8
 PKG_RELEASE:=1
 
-include $(TOPDIR)/feeds/luci/luci.mk
-
 define Package/luci-app-xupnpd/install
     $(INSTALL_DIR) $(1)/etc/config
     $(INSTALL_CONF) ./files/etc/config/xupnpd $(1)/etc/config/xupnpd
@@ -25,4 +23,8 @@ define Package/luci-app-xupnpd/install
     $(LN) ../init.d/xupnpd $(1)/etc/rc.d/S50xupnpd
 endef
 
-$(eval $(call BuildPackage,luci-app-xupnpd))
+include $(TOPDIR)/feeds/luci/luci.mk
+
+
+
+# call BuildPackage - OpenWrt buildroot signature
