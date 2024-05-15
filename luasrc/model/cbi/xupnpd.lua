@@ -10,6 +10,7 @@ enable=s:taboption("basic",Flag,"enabled",translate("Enable"))
 enable.rmempty=false
 autoactivate=s:taboption("basic",Flag,"autoactivate",translate("Broadcast for LAN Only"))
 autoactivate.rmempty=false
+autoactivate.description=translate("<a style=color:blue; href=\"../../../../iptv.m3u\" target=\"_blank\" />"..translate("HTTP M3U List Download").."</a>")
 s:tab("config",translate("IPTV M3U List"))
 config=s:taboption("config",Value,"config",translate("Replace 192.168.0.1 to your router IP"))
 config.template="cbi/tvalue"
