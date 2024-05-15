@@ -22,5 +22,6 @@ end
 function config.write(t,t,e)
 e=e:gsub("\r\n?","\n")
 nixio.fs.writefile("/usr/share/xupnpd/playlists/iptv.m3u",e)
+nixio.fs.writefile("/www/iptv.m3u",e)
 end
 return m
