@@ -18,3 +18,6 @@ msgstr "IPTV M3U 列表"
 
 msgid "Replace 192.168.0.1 to your router IP"
 msgstr "替换192.168.0.1路由器实际IP"
+
+msgid "HTTP M3U List Download"
+msgstr "HTTP M3U 列表下载"
