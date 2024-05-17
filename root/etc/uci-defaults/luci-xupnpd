@@ -11,5 +11,6 @@ rm -f /tmp/luci-indexcache
 
 chmod +x /etc/config/xupnpd
 chmod +x /etc/init.d/xupnpd
+ln -s /usr/share/xupnpd/playlists/iptv.m3u /www/iptv.m3u
 
 exit 0
